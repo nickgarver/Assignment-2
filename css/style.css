@@ -1,0 +1,222 @@
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0px;
+  background: #f5f6fa;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+}
+.game{
+  height: 100%;
+  width:100%;
+  max-width: 450px;
+  min-width: 350px;
+  text-align: center;
+  padding: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 10px solid #DCA72A;
+  border-radius: 10px;
+  background: #DCA72A;
+}
+.top{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 40px solid black; 
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  height: 70%;
+  text-align: center;
+  background: black;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+  left: 0px;
+}
+.bottom{
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  position: relative;
+  background: #DCA72A;
+  padding: 0px;
+  margin: 0px auto;
+}
+.screen{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  padding: 0px;
+  background: #dcdde1;
+}
+
+#top-buttons{
+  position: relative;
+  width: 100%;
+  height: 80%;
+  display: flex; 
+  justify-content: center;
+}
+#bottom-buttons{
+  position: relative;
+  width: 100%;
+  height: 18%;
+  display: flex; 
+  justify-content: center;
+  margin: 0px auto;
+}
+.options{
+  width: 69px;
+  height: 15px;
+  background: #342412;
+  border-radius: 1000px;
+  border: 0px solid black;
+  box-shadow: 0px 0px 3px 3px rgba(0,0,0,0);
+  margin-left: 10px;
+  margin-right: 10px;
+  transition-duration: .5s;
+/*   position: absolute;
+  bottom: 10px; */
+  outline: none;
+}
+.options:hover{
+/*   background: #393028; */
+}
+.options:active{
+/*   background: #36291A; */
+}
+.desc-outter{
+  position: relative;
+  width: 100%;
+  display: flex; 
+  justify-content: center;
+  font-size: 8px;
+  color: rgba(200, 214, 229,1);
+}
+.desc-inner{
+  margin-left: 26px;
+  margin-right: 19px;
+}
+.button{
+  position: relative;
+  background: #342412;
+  color: #c8d6e5;
+  font-size: 10px;
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+  padding: 0px;
+  margin: 15px;
+  border-radius: 1000px;
+  border: 0px solid black;
+  float: left;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive;
+  outline: none;
+  transition-duration: .5s;
+  box-shadow: 0px 0px 2px 3px rgba(0,0,0,0);
+}
+button:hover{
+  box-shadow: 0px 0px 4px 3px rgba(0,0,0,.2);
+}
+button:active{
+  transition-duration: .4s;
+  box-shadow: 0px 0px 2px 0px rgba(0,0,0,0);
+}
+.top-screen{
+  width: 100%;
+  height: 90%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 0px;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.bottom-screen{
+  width: 100%;
+  height: 10%;
+  margin: 0px;
+  padding: 3px;
+  opacity: 0;
+  border-radius: 0px 0px 5px 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  position: relative;
+  color: #ff6b6b;
+}
+.win{
+  animation: blinker 1s linear forwards;
+  color: #1dd1a1;
+}
+.lose{
+  animation: blinker 1s linear infinite; 
+  color: #ff6b6b;
+}
+
+@keyframes blinker { 
+    0% { opacity: 0.0; }
+    33% { opacity: 1.0; }
+    66% { opacity: 0.0; }
+    100% { opacity: 0.0; } 
+}
+
+#result{ 
+  text-align: center;
+  padding: 0px;
+  font-size: 20px;
+  margin: 0px; 
+}
+#number{
+  line-height: 1.5;
+}
+.number-flash{
+  animation: blinker 1s linear infinite;
+}
+#score{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.hide-cheats{
+  position: absolute;
+  width: 33%;
+  height: 120px;
+  right: 0px;
+  font-size: 8px;
+  text-align: left;
+  display: none;
+}
+
+.show-cheats{
+  color: rgba(214, 48, 49,1.0);
+  position: absolute;
+/*   background: rgba(45, 52, 54,1.0); */
+  width: 33%;
+  height: 120px;
+  right: 0px;
+  font-size: 8px;
+  text-align: left;
+  display: inline-block;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#directions{
+  font-size: 8px;
+  text-align: left;
+}

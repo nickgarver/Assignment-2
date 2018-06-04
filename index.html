@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>High Low Game</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://fonts.googleapis.com/css?family=Press+Start+2P'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <body>
+  <div class='game'>
+    <div class='top'>
+      <div class='screen'>
+        <div id=cheats class='hide-cheats'>
+          <a>Data:</a>
+          <br>
+          <a id='old'></a>
+          <br>
+          <a id='new'></a>
+          <br>
+          <a id='guess'></a>
+          <a></a>
+        </div>
+        <a id='score'></a>
+        <div class='top-screen'>
+          <br>
+          <br>
+          <a id='number' class='number-flash'>Press Start To Begin!</a>
+          <br>
+          <br>
+          <a id='directions'>Directions: guess if the next number will be higher or lower than the one on screen. Numbers range from 0-100.</a>
+        </div>
+        <div id='resultOuter' class='bottom-screen'>
+          <a id='result'>CORRECT!</a>
+        </div>
+      </div>
+    </div>
+    <div class='bottom'>
+      <div id='top-buttons'>
+        <button onClick='choiceBtn("lower")' class='button' id='lower'>LOWER</button>
+        <button onClick='choiceBtn("same")' class='button' id='same'>SAME</button>
+        <button onClick='choiceBtn("higher")' class='button' id='higher'> HIGHER</button>
+      </div>
+      <div id='bottom-buttons'>
+        <button onClick='beginGame()' class='options' style='background: #6ab04c;'></button>
+        <button onClick='toggleCheat()' class='options' style='background: #eb4d4b'></button>
+      </div>
+      <div class='desc-outter'>
+        <a class='desc-inner'>Start</a>
+        <a class='desc-inner'>Secret</a>
+      </div>
+    </div>
+  </div>
+</body>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
