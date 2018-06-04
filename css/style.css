@@ -12,6 +12,7 @@ html, body{
   width:100%;
   max-width: 450px;
   min-width: 350px;
+  min-height: 480px;
   text-align: center;
   padding: 10px;
   margin: 0 auto;
@@ -26,7 +27,7 @@ html, body{
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  border: 40px solid black; 
+  border: 40px solid black;
   border-radius: 10px;
   position: relative;
   width: 100%;
@@ -62,14 +63,14 @@ html, body{
   position: relative;
   width: 100%;
   height: 80%;
-  display: flex; 
+  display: flex;
   justify-content: center;
 }
 #bottom-buttons{
   position: relative;
   width: 100%;
   height: 18%;
-  display: flex; 
+  display: flex;
   justify-content: center;
   margin: 0px auto;
 }
@@ -96,7 +97,7 @@ html, body{
 .desc-outter{
   position: relative;
   width: 100%;
-  display: flex; 
+  display: flex;
   justify-content: center;
   font-size: 8px;
   color: rgba(200, 214, 229,1);
@@ -146,6 +147,9 @@ button:active{
 .bottom-screen{
   width: 100%;
   height: 10%;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
   margin: 0px;
   padding: 3px;
   opacity: 0;
@@ -161,25 +165,33 @@ button:active{
   color: #1dd1a1;
 }
 .lose{
-  animation: blinker 1s linear infinite; 
+  animation: blinker 1s linear infinite;
   color: #ff6b6b;
 }
 
-@keyframes blinker { 
+@keyframes blinker {
     0% { opacity: 0.0; }
     33% { opacity: 1.0; }
     66% { opacity: 0.0; }
-    100% { opacity: 0.0; } 
+    100% { opacity: 0.0; }
 }
 
-#result{ 
+#result{
   text-align: center;
+  position: absolute;
+  bottom: 3px;
+  left: 0px;
+  width: 100%;
   padding: 0px;
   font-size: 20px;
-  margin: 0px; 
+  margin: 0px;
 }
 #number{
   line-height: 1.5;
+  width: 100%;
+  position: absolute;
+  top:48%;
+  left: 0%;
 }
 .number-flash{
   animation: blinker 1s linear infinite;
@@ -203,7 +215,6 @@ button:active{
 .show-cheats{
   color: rgba(214, 48, 49,1.0);
   position: absolute;
-/*   background: rgba(45, 52, 54,1.0); */
   width: 33%;
   height: 120px;
   right: 0px;
@@ -218,5 +229,14 @@ button:active{
 
 #directions{
   font-size: 8px;
-  text-align: left;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom:0%;
+  left: 0%;
+  line-height: 2;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
