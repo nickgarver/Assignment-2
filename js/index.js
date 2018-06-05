@@ -38,7 +38,7 @@ function choiceBtn(choice){
     document.getElementById("resultOuter").className = 'bottom-screen win';
     document.getElementById("score").innerHTML = 'Score: '+ score;
   } else {
-    numberTwo = parseInt(Math.random()*100);
+    // numberTwo = parseInt(Math.random()*100);
     refreshData(choice)
     document.getElementById("result").innerHTML = 'Game Over!';
     document.getElementById("resultOuter").className = 'bottom-screen lose';
